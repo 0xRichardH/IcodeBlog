@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="icode,郝喜路,.net开发,.net跨平台,asp.net" />
+    <meta name="description" content="ILife，ICode！！爱生活，爱编程！！技术分享与交流，致力于.net跨平台研究" />
+    <title>@ViewBag.Title ILife，ICode！！爱生活，爱编程！！</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?13fe9b3f273b2615fbc620ae037bc957";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--BootStrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- 导航条 -->
+        @Html.Partial("NavPage")
+        <!-- 正文内容 -->
+        <div class="container">
+            <div class="row main-backgroud">
+                <!-- 主要内容 -->
+                <div class="col-md-9" ng-controller="MainController">
+                    @RenderBody()
+                    <!-- 广告页面 -->
+                    <div class="list-group hide">
+                        <div class="list-group-item">
+                            广告位<br /><br /><br /><br />
+                        </div>
+                    </div>
+                </div>
+                <!-- 页面侧面 -->
+                @*@Html.Partial("RightPage")*@
+                @{Html.RenderAction("RenderRightPage", "Partial");}
+            </div>
+            <!-- 关于我-->
+            <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+                            </button>
+                            <h4 class="modal-title" id="modal-label">关于</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                郝喜路，屌丝程序猿一枚。.Net平台开发者。。。
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            @Html.Partial("FooterPage")
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("script", false)
+    @* 百度分享悬浮式 *@
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"8","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+DEBUG 2015-07-24 00:00:31,788 [29   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 00:00:33,006 [29   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 00:00:33,009 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,012 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,014 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,015 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,015 [29   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:00:33,018 [29   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 00:00:33,879 [29   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 00:00:34,710 [29   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 00:00:34,712 [29   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 00:00:34,877 [29   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 00:00:34,882 [29   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 00:00:34,883 [29   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 00:00:34,883 [29   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-24 00:07:35,714 [18   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-24 00:07:47,687 [10   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 00:07:49,062 [10   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 00:07:49,066 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,068 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,069 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,070 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,070 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,070 [10   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 00:07:49,073 [10   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 00:07:49,992 [10   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 00:07:51,002 [10   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 00:07:51,004 [10   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 00:07:51,151 [10   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 00:07:51,157 [10   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 00:07:51,159 [10   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 00:07:51,159 [10   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-24 00:07:53,474 [8    ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2015-07-24 00:07:55,034 [14   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpCompileException (0x80004005): d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml(63): error CS0103: 当前上下文中不存在名称“Scripts”
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-24 09:05:50,569 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 09:05:53,299 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 09:05:53,303 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,306 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:05:53,312 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 09:05:54,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 09:05:56,297 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 09:05:56,300 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 09:05:56,365 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 09:05:56,372 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 09:05:56,374 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 09:05:56,374 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 09:08:28,084 [12   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 09:08:30,117 [12   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 09:08:30,125 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,128 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,128 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,129 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,130 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,130 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 09:08:30,137 [12   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 09:08:31,689 [12   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 09:08:33,220 [12   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 09:08:33,230 [12   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 09:08:33,657 [12   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 09:08:33,664 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 09:08:33,666 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 09:08:33,666 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 14:12:35,406 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 14:12:37,463 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 14:12:37,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:12:37,474 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 14:12:38,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 14:12:39,161 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 14:12:39,162 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 14:12:39,220 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 14:12:39,226 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 14:12:39,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 14:12:39,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 14:43:10,750 [35   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 14:43:12,045 [35   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 14:43:12,049 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,051 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,052 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,052 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,052 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,053 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,053 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,053 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,053 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,054 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,054 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:43:12,060 [35   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 14:43:12,939 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 14:43:13,882 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 14:43:13,888 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 14:43:14,231 [35   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 14:43:14,236 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 14:43:14,237 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 14:43:14,237 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 14:52:20,526 [51   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 14:52:22,203 [51   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 14:52:22,207 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,210 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,210 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,211 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,212 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 14:52:22,215 [51   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 14:52:23,304 [51   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 14:52:24,418 [51   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 14:52:24,421 [51   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 14:52:24,643 [51   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 14:52:24,648 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 14:52:24,649 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 14:52:24,649 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 15:50:22,406 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 15:50:23,562 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 15:50:23,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,568 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,569 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,570 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 15:50:23,574 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 15:50:24,311 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 15:50:25,189 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 15:50:25,191 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 15:50:25,328 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 15:50:25,333 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 15:50:25,335 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 15:50:25,337 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 16:12:11,669 [51   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 16:12:12,990 [51   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 16:12:12,997 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,000 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,001 [51   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:12:13,004 [51   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 16:12:13,942 [51   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 16:12:14,883 [51   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 16:12:14,886 [51   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 16:12:15,050 [51   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 16:12:15,056 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 16:12:15,057 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 16:12:15,058 [51   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 16:15:31,946 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 16:15:33,619 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 16:15:33,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:15:33,630 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 16:15:34,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 16:15:35,389 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 16:15:35,391 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 16:15:35,439 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 16:15:35,443 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 16:15:35,444 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 16:15:35,444 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 16:16:39,064 [83   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 16:16:40,363 [83   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 16:16:40,367 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,370 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,370 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,371 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:16:40,377 [83   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 16:16:41,281 [83   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 16:16:42,292 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 16:16:42,294 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 16:16:42,433 [83   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 16:16:42,437 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 16:16:42,438 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 16:16:42,439 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 16:25:00,731 [83   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 16:25:02,003 [83   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 16:25:02,011 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,014 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,014 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,014 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,014 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,015 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:02,021 [83   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 16:25:02,830 [83   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 16:25:03,806 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 16:25:03,809 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 16:25:24,275 [83   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 16:25:25,418 [83   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 16:25:25,421 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,423 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,424 [83   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 16:25:25,427 [83   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 16:25:26,200 [83   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 16:25:27,075 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 16:25:27,078 [83   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 16:25:27,248 [83   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 16:25:27,252 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 16:25:27,253 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 16:25:27,253 [83   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 17:10:54,273 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 17:10:55,560 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 17:10:55,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,566 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,567 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:10:55,571 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 17:10:56,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 17:10:57,534 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 17:10:57,538 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 17:10:57,710 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 17:10:57,716 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 17:10:57,717 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 17:10:57,718 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 17:11:10,561 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 17:11:11,708 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 17:11:11,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:11:11,718 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 17:11:12,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 17:13:03,090 [64   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 17:13:04,330 [64   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 17:13:04,333 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,335 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,335 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,335 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,336 [64   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 17:13:04,342 [64   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 17:13:05,511 [64   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 17:13:06,678 [64   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 17:13:06,679 [64   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 17:13:06,849 [64   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 17:13:06,856 [64   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 17:13:06,858 [64   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 17:13:06,858 [64   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-24 23:13:17,798 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-24 23:13:19,093 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-24 23:13:19,103 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-24 23:13:19,110 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-24 23:13:19,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-24 23:13:21,728 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-24 23:13:21,732 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-24 23:13:22,289 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-24 23:13:22,299 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-24 23:13:22,303 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-24 23:13:22,303 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb

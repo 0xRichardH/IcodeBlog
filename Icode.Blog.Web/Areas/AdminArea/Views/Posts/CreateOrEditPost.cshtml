@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = string.Format("{0}文章", ViewBag.Name);
+    Layout = "~/Areas/AdminArea/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section css{
+    <style>
+        .input-icon ul {
+            list-style-type: none;
+        }
+
+            .input-icon ul li {
+                width: 150px;
+                line-height: 15px;
+                float: left;
+                margin-left: 10px;
+            }
+    </style>
+}
+
+@section breadcrumb{
+    <li><i class="glyphicon glyphicon-book"></i>&nbsp;<a href="@Request.RawUrl">文章管理</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+    <li><a href="@Url.Action("list")">文章列表</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+    <li class="active">@string.Format("{0}文章", ViewBag.Name)</li>
+}
+
+<input type="hidden" id="postId" value="@ViewBag.Id" />
+<div class="col-lg-12" ng-controller="PostController">
+    <div class="panel panel-blue">
+        <div class="panel-heading">
+            @string.Format("{0}文章", ViewBag.Name)
+        </div>
+        <div class="panel-body pan">
+            <form action="#" class="form-horizontal">
+                <div class="form-body pal">
+                    <div class="form-group">
+                        <label for="inputTitle" class="col-md-1 control-label">
+                            标题 <span class='require'>*</span>
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <i class="glyphicon glyphicon-book"></i>
+                                <input id="inputTitle" type="text" placeholder="标题" class="form-control" maxlength="100" ng-model="title" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editor" class="col-md-1 control-label">
+                            内容<span class='require'>*</span>
+                        </label>
+                        <div class="col-md-9">
+                            <script id="editor" type="text/plain" style="height: 300px">
+                            </script>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkBoxCategory" class="col-md-1 control-label">
+                            个人分类
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <ul>
+                                    <li ng-repeat="item in items">
+                                        <input type="checkbox" id="{{item.id}}" name="checkBoxCategory" value="{{item.id}}" />
+                                        <label for="{{item.id}}">{{item.categoryName}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-md-1 control-label">
+                            标签
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <ul>
+                                    <li ng-repeat="tag in tagItems">
+                                        <input type="checkbox" id="{{tag.id}}" name="checkBoxCategory" value="{{tag.id}}" />
+                                        <label for="{{tag.id}}">{{tag.categoryName}}</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="summary" class="col-md-1 control-label">
+                            文章摘要
+                        </label>
+                        <div class="col-md-9">
+                            <textarea id="summary" placeholder="如果为空，则默认取文章前100字" rows="3" class="form-control" ng-model="summary"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="col-md-1 control-label">
+                            友好地址
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <i class="glyphicon glyphicon-globe"></i>
+                                <input id="address" type="text" placeholder="友好地址" class="form-control" maxlength="36" ng-model="address" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-md-1 control-label">
+                            文章密码
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <i class="fa fa-asterisk"></i>
+                                <input id="password" type="text" placeholder="文章密码" class="form-control" maxlength="36" ng-model="password" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-md-1 control-label">
+                            文章状态
+                        </label>
+                        <div class="col-md-9">
+                            <select id="selectPostState" class="selectpicker form-control" ng-model="postState">
+                                <option ng-repeat="item in postStateItems" ng-selected="postState === item || $index===0" value="{{item}}">{{postStaeDict[item]}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-md-1 control-label">
+                            评论状态
+                        </label>
+                        <div class="col-md-9">
+                            <select id="selectCommonSettingState" class="selectpicker form-control" ng-model="commonSettingState">
+                                <option ng-repeat="item in commonSettingStateItems" ng-selected="commonSettingState === item || $index===0" value="{{item}}">{{commonSettingStateDict[item]}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-md-1 control-label">
+                            发布选项
+                        </label>
+                        <div class="col-md-9">
+                            <div class="input-icon">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="isShowRSS" />
+                                        <label for="isShowRSS">是否在RSS显示</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="isTop" />
+                                        <label for="isTop">是否置顶</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="isOriginal" checked />
+                                        <label for="isOriginal">是否原创</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <center>
+                        <a href="#" class="btn btn-green" ng-click="save('@Url.Action("list")')">保存</a>&nbsp;
+                        <a href="#" class="btn btn-primary" ng-click="cancel('@Url.Action("list")')">取消</a>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section script{
+    <script src="~/Areas/AdminArea/Content/ueditor/ueditor.config.js"></script>
+    <script src="~/Areas/AdminArea/Content/ueditor/ueditor.all.min.js"></script>
+    <script src="~/Areas/AdminArea/Content/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="~/Areas/AdminArea/Content/js/page/create_post.js"></script>
+
+}
+
+

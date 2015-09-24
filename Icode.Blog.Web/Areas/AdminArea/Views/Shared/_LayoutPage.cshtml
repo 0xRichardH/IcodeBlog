@@ -1,0 +1,69 @@
+﻿@using System.Threading
+<!DOCTYPE html>
+
+<html ng-app="default" lang="@Thread.CurrentThread.CurrentUICulture.Name">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Bundles/AdminArea/css")
+    <!--Loading style-->
+    <link type="text/css" rel="stylesheet" href="~/Areas/AdminArea/Content/css/themes/style1/orange-blue.css" class="default-style">
+    <link type="text/css" rel="stylesheet" href="~/Areas/AdminArea/Content/css/themes/style1/orange-blue.css" id="theme-change" class="style-change color-change">
+    <link type="text/css" rel="stylesheet" href="~/Areas/AdminArea/Content/css/style-responsive.css">
+    @RenderSection("css", false)
+</head>
+<body class=" header-fixed">
+    <div>
+        <div class="news-ticker bg-orange">
+            <div class="container">
+            </div>
+        </div>
+        <!--BEGIN BACK TO TOP--><a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+        <!--END BACK TO TOP-->
+        <!--BEGIN TOPBAR-->
+        @Html.Partial("header")
+        <!--END TOPBAR-->
+        <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            @Html.Partial("menu")
+            <!--END SIDEBAR MENU-->
+            <!--BEGIN PAGE WRAPPER-->
+            <div id="page-wrapper">
+                <!--BEGIN TITLE & BREADCRUMB PAGE-->
+                <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+                    <div class="page-header pull-left">
+                        <div class="page-title">@RenderSection("pageTitle", false)</div>
+                    </div>
+                    <ol class="breadcrumb page-breadcrumb pull-left">
+                        @*<li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                            <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                            <li class="active">Dashboard</li>*@
+                        @RenderSection("breadcrumb", false)
+                    </ol>
+                    <div class="clearfix"></div>
+                </div>
+                <!--END TITLE & BREADCRUMB PAGE-->
+                <!--BEGIN CONTENT-->
+                <div class="page-content">
+                    @RenderBody()
+                </div>
+                <!--END CONTENT-->
+            </div>
+            <!--BEGIN FOOTER-->
+            @Html.Partial("footer")
+            <!--END FOOTER-->
+            <!--END PAGE WRAPPER-->
+        </div>
+    </div>
+    @Scripts.Render("~/Bundles/AdminArea/js")
+    <script src="~/Scripts/angular.min.js"></script>
+    @Scripts.Render("~/Bundles/Abp")
+    <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
+    <script src="~/api/AbpServiceProxies/GetAll"></script>
+    @RenderSection("script", false)
+</body>
+</html>

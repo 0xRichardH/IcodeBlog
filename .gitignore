@@ -1,0 +1,13 @@
+*.zip
+*.rar
+*.bak
+*.log
+packages
+TestResults
+.vs
+.nuget
+*/bin
+*/obj
+*.suo
+*.user
+/Logs

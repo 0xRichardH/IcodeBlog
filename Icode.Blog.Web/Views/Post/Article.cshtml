@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = string.Format("{0}——ILife，ICode！！爱生活，爱编程！！", ViewBag.Post.Title);
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<ol class="breadcrumb">
+    <li><i class="glyphicon glyphicon-home"></i> <a href="/">首页</a></li>
+    <li class="active"><i class="glyphicon glyphicon-file"></i> 正文</li>
+</ol>
+<article class="panel panel-default">
+    <header class="panel-heading">
+        <h3 class="panel-title">
+            <a href="@Request.RawUrl">@ViewBag.Post.Title</a>
+        </h3>
+    </header>
+    <div class="panel-meta text-right">
+        <span class="author">郝喜路</span>
+        发表于
+        <time>@PageCommonHelper.FormateDateTime(ViewBag.Post.LastModificationTime)</time>
+        , 阅读
+        (<span class="viewcount">@ViewBag.Post.PVCount</span>)
+    </div>
+    <div class="panel-body @if (ViewBag.Post.IsOriginal) { @Html.Encode("sign") } ">
+        @Html.Raw(ViewBag.Post.Content)
+    </div>
+    <div class="panel-footer">
+        <i class="glyphicon glyphicon-tags"></i>
+        @foreach (var item in ViewBag.Tags)
+        {
+            @Html.Encode("[")<a href="#">@item.CategoryName</a>@Html.Encode("]")
+        }
+    </div>
+</article>
+<div class="alert alert-warning copyright">
+    <a target="_blank" href="http://creativecommons.org/licenses/by/2.5/cn/" rel="license">
+        <img class="creativecommons" src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" alt="Creative Commons License">
+    </a>
+    本文基于
+    <a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by/2.5/cn/">署名 2.5 中国大陆</a>
+    许可协议发布，欢迎转载，演绎或用于商业目的，但必须保留本文署名
+    <a href="http://haoxilu.net/">郝喜路</a>
+    (包含链接）。
+</div>
+@* 评论 *@
+<div id="disqus_thread"></div>
+@section script{
+    @* 评论 *@
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'haoxilu123';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+}
+

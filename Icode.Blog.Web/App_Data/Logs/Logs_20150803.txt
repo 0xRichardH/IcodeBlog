@@ -1,0 +1,150 @@
+DEBUG 2015-08-03 18:48:34,590 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-03 18:48:36,318 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-03 18:48:36,322 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,325 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,327 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,328 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,328 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:48:36,331 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-03 18:48:37,226 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-03 18:48:38,506 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-03 18:48:38,508 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-03 18:48:38,510 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-03 18:48:38,942 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-03 18:48:38,947 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-03 18:48:38,978 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-03 18:48:38,979 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-03 18:48:43,546 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3681 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:48:43,579 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3881 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:48:45,289 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 23 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:48:45,313 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 23 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-03 18:50:26,954 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-03 18:50:28,709 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-03 18:50:28,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,718 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:50:28,721 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-03 18:50:29,613 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-03 18:50:30,518 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-03 18:50:30,520 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-03 18:50:30,522 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-03 18:50:30,569 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-03 18:50:30,573 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-03 18:50:30,575 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-03 18:50:30,575 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-03 18:50:34,131 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 2909 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:50:34,154 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3106 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:50:34,351 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 19 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:50:34,369 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 17 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-03 18:51:05,282 [8    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-03 18:51:06,978 [8    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-03 18:51:06,982 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,984 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,985 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,985 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,985 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,985 [8    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-03 18:51:06,989 [8    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-03 18:51:07,830 [8    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-03 18:51:08,740 [8    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-03 18:51:08,742 [8    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-03 18:51:08,744 [8    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-03 18:51:08,791 [8    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-03 18:51:08,795 [8    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-03 18:51:08,796 [8    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-03 18:51:08,796 [8    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-03 18:51:12,409 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 2962 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:12,434 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3157 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:12,628 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 22 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:12,652 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 22 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:54,248 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 35 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:54,250 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 37 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:54,916 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:51:54,918 [19   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:30,948 [20   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 36 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:30,950 [20   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 39 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:31,601 [20   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:31,602 [20   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:32,848 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 32 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:32,849 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 34 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:32,857 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:32,859 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:33,748 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 36 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:33,751 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 39 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:33,760 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:52:33,762 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:17,453 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 36 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:17,455 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 38 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:18,083 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:18,085 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:23,642 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 33 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:23,644 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 35 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:23,654 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:23,656 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:58,516 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 32 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:58,517 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 34 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:59,194 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:53:59,196 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:15,361 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 26 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:15,364 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 29 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:15,987 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:15,989 [28   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:26,431 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 26 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:26,432 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 27 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,057 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,059 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,933 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 31 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,935 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 33 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,944 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:27,946 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:43,161 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 38 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:43,163 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 42 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:43,793 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:43,794 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:47,559 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 33 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:47,561 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 35 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:47,566 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:54:47,568 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:55:08,021 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 34 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:55:08,022 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 38 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:55:08,030 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 18:55:08,031 [29   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:26,666 [42   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 36 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:26,667 [42   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 38 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:27,378 [42   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 4 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:27,383 [42   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 4 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:48,089 [45   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 34 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:48,091 [45   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 36 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:48,704 [45   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:03:48,706 [45   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:10,220 [40   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 11 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:10,222 [40   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 15 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:10,232 [40   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:10,233 [40   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:12,661 [44   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 37 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:12,662 [44   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 40 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:12,670 [44   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:04:12,672 [44   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:07:42,682 [53   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 40 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:07:42,683 [53   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 43 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:07:43,323 [53   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 4 ms from 169.254.80.80 IP address.
+INFO  2015-08-03 19:07:43,328 [53   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 4 ms from 169.254.80.80 IP address.

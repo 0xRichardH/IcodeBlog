@@ -1,0 +1,999 @@
+DEBUG 2015-07-28 17:01:16,821 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:01:18,189 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:01:18,196 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,198 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,200 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,200 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,200 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,200 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:01:18,205 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:01:18,888 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:01:19,842 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:01:19,844 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:01:20,272 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:01:20,279 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:01:20,281 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:01:20,281 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-28 17:01:27,953 [7    ] .Mvc.Controllers.AbpHandleErrorAttribute - System.InvalidOperationException: The model backing the 'BlogDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 Abp.EntityFramework.AbpDbContext.Initialize()
+   在 Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   在 Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   在 Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve[T]()
+   在 Abp.Dependency.IocManager.Resolve[T]()
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.<CountAsync>d__1a.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Posts.PostService.<GetPostsByPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.InvalidOperationException: The model backing the 'BlogDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 Abp.EntityFramework.AbpDbContext.Initialize()
+   在 Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   在 Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   在 Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve[T]()
+   在 Abp.Dependency.IocManager.Resolve[T]()
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.<CountAsync>d__1a.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Posts.PostService.<GetPostsByPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-28 17:09:47,734 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:09:49,470 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:09:49,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,476 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,477 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,478 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:09:49,482 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:09:50,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:09:51,433 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:09:51,438 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:09:51,639 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:09:51,645 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:09:51,646 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:09:51,647 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-28 17:09:54,683 [23   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.InvalidOperationException: The model backing the 'BlogDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 Abp.EntityFramework.AbpDbContext.Initialize()
+   在 Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   在 Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   在 Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve[T]()
+   在 Abp.Dependency.IocManager.Resolve[T]()
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.<CountAsync>d__1a.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Posts.PostService.<GetPostsByPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.InvalidOperationException: The model backing the 'BlogDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 Abp.EntityFramework.AbpDbContext.Initialize()
+   在 Castle.MicroKernel.LifecycleConcerns.InitializationConcern.Apply(ComponentModel model, Object component)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyConcerns(IEnumerable`1 steps, Object instance)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.ApplyCommissionConcerns(Object instance)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.<>c__DisplayClass6.<InvokeResolvePipeline>b__5()
+   在 Castle.MicroKernel.Handlers.ResolveInvocation.Proceed()
+   在 Castle.MicroKernel.Handlers.ComponentLifecycleExtension.Intercept(ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.InvokeResolvePipeline(Int32 extensionIndex, ResolveInvocation invocation)
+   在 Castle.MicroKernel.Handlers.ExtendedHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve[T]()
+   在 Abp.Dependency.IocManager.Resolve[T]()
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext]()
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork)
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.get_DbContext()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.get_Table()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostRepositoryProxy.GetAll()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.<CountAsync>d__1a.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Posts.PostService.<GetPostsByPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-28 17:11:20,877 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:11:22,196 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:11:22,199 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,201 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,202 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,203 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:11:22,206 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:11:23,064 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:11:23,909 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:11:23,911 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:11:24,043 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:11:24,047 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:11:24,048 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:11:24,049 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 17:14:57,879 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:14:59,123 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:14:59,128 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,130 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,130 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,131 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:14:59,134 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:14:59,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:15:00,826 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:15:00,831 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:15:00,963 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:15:00,967 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:15:00,968 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:15:00,968 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 17:39:24,457 [72   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:39:26,201 [72   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:39:26,205 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,207 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,208 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,208 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,208 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,208 [72   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:39:26,213 [72   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:39:27,045 [72   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:39:28,020 [72   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:39:28,022 [72   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:39:28,070 [72   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:39:28,075 [72   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:39:28,076 [72   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:39:28,076 [72   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 17:48:38,767 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:48:40,046 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:48:40,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,052 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,053 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:48:40,056 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:48:40,888 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:48:41,809 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:48:41,810 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:48:41,977 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:48:41,983 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:48:41,985 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:48:41,985 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-28 17:48:47,110 [46   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> System.IO.FileLoadException: 未能加载文件或程序集“Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da”
+   在 ICode.Library.Utilities.Helper.IocHelper.Resolve[T]()
+   在 ICode.Library.Utilities.CacheHelper.get_CacheProvider() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 167
+   在 ICode.Library.Utilities.CacheHelper.Get[T](String key) 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 61
+   在 Icode.Blog.Posts.PostService.<GetTopTen>d__6.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 148
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.PartialController.<RenderRightPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\PartialController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, String controllerName)
+   在 ASP._Page_Views_Shared__LayoutPage_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml:行号 32
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> System.IO.FileLoadException: 未能加载文件或程序集“Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da”
+   在 ICode.Library.Utilities.Helper.IocHelper.Resolve[T]()
+   在 ICode.Library.Utilities.CacheHelper.get_CacheProvider() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 167
+   在 ICode.Library.Utilities.CacheHelper.Get[T](String key) 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 61
+   在 Icode.Blog.Posts.PostService.<GetTopTen>d__6.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 148
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.PartialController.<RenderRightPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\PartialController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, String controllerName)
+   在 ASP._Page_Views_Shared__LayoutPage_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml:行号 32
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-28 17:52:01,063 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 17:52:02,272 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 17:52:02,278 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 17:52:02,286 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 17:52:03,097 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 17:52:03,993 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 17:52:03,996 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 17:52:04,148 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 17:52:04,154 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 17:52:04,155 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 17:52:04,156 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-07-28 17:52:09,351 [46   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> System.Configuration.ConfigurationErrorsException: The configuration section 'autofac' could not be read.
+   在 Autofac.Configuration.ConfigurationSettingsReader..ctor(String sectionName)
+   在 ICode.Library.Utilities.Helper.IocHelper.Resolve[T]() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Helper\IocHelper.cs:行号 14
+   在 ICode.Library.Utilities.CacheHelper.get_CacheProvider() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 167
+   在 ICode.Library.Utilities.CacheHelper.Get[T](String key) 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 61
+   在 Icode.Blog.Posts.PostService.<GetTopTen>d__6.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 148
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.PartialController.<RenderRightPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\PartialController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, String controllerName)
+   在 ASP._Page_Views_Shared__LayoutPage_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml:行号 32
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> System.Configuration.ConfigurationErrorsException: The configuration section 'autofac' could not be read.
+   在 Autofac.Configuration.ConfigurationSettingsReader..ctor(String sectionName)
+   在 ICode.Library.Utilities.Helper.IocHelper.Resolve[T]() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Helper\IocHelper.cs:行号 14
+   在 ICode.Library.Utilities.CacheHelper.get_CacheProvider() 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 167
+   在 ICode.Library.Utilities.CacheHelper.Get[T](String key) 位置 D:\IcodeBlog\ICodeCore\ICode.Library.Utilities\Caching\CacheHelper.cs:行号 61
+   在 Icode.Blog.Posts.PostService.<GetTopTen>d__6.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Application\Posts\PostService.cs:行号 148
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<ReturnGenericTaskAfterAction>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Icode.Blog.Web.Controllers.PartialController.<RenderRightPage>d__3.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\PartialController.cs:行号 32
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper htmlHelper, String actionName, String controllerName)
+   在 ASP._Page_Views_Shared__LayoutPage_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Shared\_LayoutPage.cshtml:行号 32
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-07-28 22:13:53,430 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 22:13:54,456 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 22:13:54,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:13:54,466 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 22:13:55,222 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 22:13:56,246 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 22:13:56,247 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 22:13:56,655 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 22:13:56,661 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 22:13:56,662 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 22:13:56,663 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 22:21:39,665 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 22:21:40,724 [24   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 22:21:40,728 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,729 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,730 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:21:40,734 [24   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 22:21:41,449 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 22:21:42,274 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 22:21:42,277 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 22:21:42,436 [24   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 22:21:42,440 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 22:21:42,441 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 22:21:42,441 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 22:28:38,132 [21   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 22:28:39,138 [21   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 22:28:39,142 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,144 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,144 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,144 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,144 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,144 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,145 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,145 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,145 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,145 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,145 [21   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:28:39,150 [21   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 22:28:39,835 [21   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 22:28:40,604 [21   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 22:28:40,607 [21   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 22:28:40,746 [21   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 22:28:40,750 [21   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 22:28:40,751 [21   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 22:28:40,752 [21   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 22:53:07,292 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 22:53:08,243 [24   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 22:53:08,246 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,248 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,248 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,248 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,249 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 22:53:08,252 [24   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 22:53:08,883 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 22:53:09,581 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 22:53:09,583 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 22:53:09,720 [24   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 22:53:09,725 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 22:53:09,726 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 22:53:09,726 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 23:09:58,816 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 23:09:59,822 [24   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 23:09:59,827 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,828 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,829 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,830 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:09:59,832 [24   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 23:10:00,508 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 23:10:01,264 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 23:10:01,266 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 23:10:01,403 [24   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 23:10:01,407 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 23:10:01,408 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 23:10:01,408 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 23:10:53,337 [12   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 23:10:54,339 [12   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 23:10:54,343 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,344 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,345 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,346 [12   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:10:54,348 [12   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 23:10:55,068 [12   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 23:10:55,842 [12   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 23:10:55,844 [12   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 23:10:55,986 [12   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 23:10:55,990 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 23:10:55,991 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 23:10:55,991 [12   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 23:27:28,575 [24   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 23:27:29,838 [24   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 23:27:29,841 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,845 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,845 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,845 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,846 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,847 [24   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:27:29,850 [24   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 23:27:30,661 [24   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 23:27:31,581 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 23:27:31,583 [24   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 23:27:31,736 [24   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 23:27:31,743 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 23:27:31,746 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 23:27:31,746 [24   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 23:31:12,842 [69   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 23:31:13,995 [69   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 23:31:13,999 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,001 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,001 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,001 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,001 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,002 [69   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:31:14,005 [69   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 23:31:14,766 [69   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 23:31:15,615 [69   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 23:31:15,617 [69   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 23:31:15,767 [69   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 23:31:15,771 [69   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 23:31:15,772 [69   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 23:31:15,772 [69   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-07-28 23:38:07,024 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-07-28 23:38:08,069 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-07-28 23:38:08,072 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,075 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-07-28 23:38:08,078 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-07-28 23:38:08,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-07-28 23:38:09,627 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-07-28 23:38:09,629 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-07-28 23:38:09,978 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-07-28 23:38:09,983 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-07-28 23:38:09,986 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-07-28 23:38:09,987 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-07-28 23:44:04,686 [21   ] Icode.Blog.Categories.CategoryService    - Creating a category for input : [ CreateCategoryInput => ParentId =  , CategoryName = 测试标签 , Description =  , Taxonomy = PostTag  ]
+INFO  2015-07-28 23:44:17,118 [16   ] Icode.Blog.Categories.CategoryService    - Creating a category for input : [ CreateCategoryInput => ParentId =  , CategoryName = 睡觉了 , Description =  , Taxonomy = PostTag  ]
+INFO  2015-07-28 23:44:24,138 [31   ] Icode.Blog.Categories.CategoryService    - Creating a category for input : [ CreateCategoryInput => ParentId =  , CategoryName = asp.net , Description =  , Taxonomy = PostTag  ]

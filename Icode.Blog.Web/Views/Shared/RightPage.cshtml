@@ -1,0 +1,74 @@
+﻿<div class="col-md-3">
+    <div class="list-group text-center">
+        <div class="list-group-item">
+            <h4 class="list-group-item-heading text-center">阅读ing</h4>
+        </div>
+        <!-- info -->
+        <a href="http://book.douban.com/subject/26577765/" target="_blank" class="list-group-item">
+            <img src="http://img3.douban.com/lpic/s28261781.jpg" style="height: 230px" />
+        </a>
+    </div>
+
+    <!--aliyun 广告位-->
+    <div class="list-group">
+        <a href="http://s.click.taobao.com/t?e=m%3D2%26s%3Dfz3uV%2FFRekscQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAmWTt0QIxUi1xSj%2FdG%2F%2BikKXXRj7efzki%2F0ZcrfuDf8xZ%2BUYj0rfHsPF4MeVniHsfzDVuRn8ddiDsEVVC24eqozcHtRpEUy6RHVyxRO0gvF4QxJtmCgOmCLXl8Q7TEjBF%2BX11FSyvDCnQiv%2BJKjlPObGDmntuH4VtA%3D%3D" class="list-group-item text-center">
+            <img src="~/Images/200-200.gif" style="height: 200px;" />
+        </a>
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item">
+            <h4 class="list-group-item-heading text-center">最新文章</h4>
+        </div>
+
+        @foreach (var item in ViewBag.TopPost)
+        {
+            <a href="@Url.Action("articles","post", new { id= PageCommonHelper.RenderPostUrl(item.EntryName, item.Id.ToString()) })" class="list-group-item">
+                @item.Title
+            </a>
+        }
+
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item text-center">
+            <h4>文章分类</h4>
+        </div>
+        @foreach (var item in ViewBag.Categories)
+        {
+            <a href="#" class="list-group-item">
+                <span class="badge">@item.Count</span>
+                @item.CategoryName
+            </a>
+        }
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item text-center">
+            <h4>文章档案</h4>
+        </div>
+        <a href="#" class="list-group-item">
+            <span class="badge">0</span>
+            2015年7月
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge">0</span>
+            2015年8月
+        </a>
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item text-center">
+            <h4>友情链接</h4>
+        </div>
+        <a class="list-group-item" href="http://www.rupeng.com" target="_blank">
+            如鹏网
+        </a>
+        <a class="list-group-item" href="http://studygolang.com/" target="_blank">GO语言中文网</a>
+        <div class="list-group-item hide">
+            广告位<br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+
+
+</div>

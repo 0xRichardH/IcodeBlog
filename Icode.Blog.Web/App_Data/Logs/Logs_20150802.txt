@@ -1,0 +1,527 @@
+DEBUG 2015-08-02 00:09:30,949 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 00:09:32,782 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 00:09:32,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,790 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 00:09:32,804 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 00:09:33,638 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 00:09:34,685 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 00:09:34,686 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 00:09:34,689 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 00:09:34,743 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 00:09:34,748 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 00:09:34,749 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 00:09:34,750 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 00:09:38,895 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3193 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:09:38,895 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3193 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:09:38,928 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3401 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:09:38,928 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3401 ms from 169.254.80.80 IP address.
+ERROR 2015-08-02 00:09:39,945 [6    ] .Mvc.Controllers.AbpHandleErrorAttribute - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “Icode.Blog.Posts.Dtos.PostDto”未包含“CreateTime”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_Views_home_Index_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Home\Index.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “Icode.Blog.Posts.Dtos.PostDto”未包含“CreateTime”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_Views_home_Index_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Home\Index.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2015-08-02 00:09:39,945 [7    ] .Mvc.Controllers.AbpHandleErrorAttribute - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “Icode.Blog.Posts.Dtos.PostDto”未包含“CreateTime”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_Views_home_Index_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Home\Index.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “Icode.Blog.Posts.Dtos.PostDto”未包含“CreateTime”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_Views_home_Index_cshtml.Execute() 位置 d:\IcodeBlog\Icode.Blog.Web\Views\Home\Index.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+INFO  2015-08-02 00:10:57,099 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 41 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:10:57,101 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 45 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:10:57,969 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 19 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 00:10:57,992 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 21 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-02 09:42:21,400 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 09:42:22,940 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 09:42:22,943 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,945 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,946 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,947 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:42:22,951 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 09:42:23,932 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 09:42:25,202 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 09:42:25,204 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 09:42:25,206 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 09:42:25,705 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 09:42:25,711 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 09:42:25,744 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 09:42:25,745 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 09:42:30,049 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3387 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:42:30,084 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3610 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:42:31,911 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 21 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:42:31,930 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 17 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:42:42,908 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 3 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:42:54,005 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:46,403 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:48,715 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 28 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:48,717 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 30 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:48,776 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:48,777 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:53,955 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:55,437 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:56,660 [11   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:57,675 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:58,843 [11   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:43:59,479 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-02 09:46:59,511 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 09:47:01,289 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 09:47:01,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:47:01,302 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 09:47:02,157 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 09:47:03,169 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 09:47:03,173 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 09:47:03,176 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 09:47:03,225 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 09:47:03,230 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 09:47:03,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 09:47:03,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 09:47:07,537 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 2106 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,537 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3522 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,537 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3525 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,537 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3524 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,537 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3522 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,571 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 2148 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,571 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3784 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,571 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3784 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,571 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3784 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,576 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3784 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,867 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 25 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,867 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 25 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,867 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 27 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,895 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 24 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,895 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 25 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:07,895 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 26 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:08,099 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 259 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:08,101 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:08,298 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 457 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:08,300 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:28,424 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 29 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:28,426 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 32 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:28,432 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:28,434 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:31,984 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 21 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:31,986 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 25 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:31,994 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:31,996 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:36,761 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 10 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:47:36,762 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 13 ms from 169.254.80.80 IP address.
+ERROR 2015-08-02 09:47:36,776 [13   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.Web.HttpException (0x80004005): Not Found
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 43
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.Web.HttpException (0x80004005): Not Found
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 43
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+INFO  2015-08-02 09:47:36,800 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 4 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-02 09:49:47,366 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 09:49:48,849 [28   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 09:49:48,853 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,856 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,856 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,856 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,856 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,857 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:49:48,861 [28   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 09:49:49,779 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 09:49:50,820 [28   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 09:49:50,822 [28   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 09:49:50,824 [28   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 09:49:50,985 [28   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 09:49:50,989 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 09:49:50,990 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 09:49:50,991 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 09:49:54,874 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3156 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:49:54,898 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3343 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:49:56,500 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 20 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:49:56,520 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 18 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 09:50:03,120 [26   ] code.Blog.Web.Controllers.HomeController - 用户Ip:localhost,访问错误页面：/123
+INFO  2015-08-02 09:50:03,122 [26   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 4 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-02 09:51:10,271 [35   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 09:51:11,710 [35   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 09:51:11,714 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,716 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,717 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,717 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,717 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 09:51:11,720 [35   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 09:51:12,615 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 09:51:13,666 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 09:51:13,669 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 09:51:13,672 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 09:51:13,841 [35   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 09:51:13,846 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 09:51:13,847 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 09:51:13,847 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+ERROR 2015-08-02 09:51:14,357 [6    ] code.Blog.Web.Controllers.HomeController - 用户Ip:::1,访问错误页面：/123
+INFO  2015-08-02 09:51:14,376 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Error404 is executed by user 1 in 15 ms from 169.254.80.80 IP address.
+DEBUG 2015-08-02 10:04:20,743 [35   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 10:04:22,190 [35   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 10:04:22,194 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,196 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,196 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,196 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,197 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:04:22,201 [35   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 10:04:23,184 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 10:04:24,214 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 10:04:24,217 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 10:04:24,220 [35   ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 10:04:24,433 [35   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 10:04:24,439 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 10:04:24,441 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 10:04:24,441 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 10:04:25,252 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 110 ms from 169.254.80.80 IP address.
+ERROR 2015-08-02 10:04:25,259 [6    ] .Mvc.Controllers.AbpHandleErrorAttribute - System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+INFO  2015-08-02 10:09:33,560 [48   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 1 ms from 169.254.80.80 IP address.
+ERROR 2015-08-02 10:09:33,560 [48   ] .Mvc.Controllers.AbpHandleErrorAttribute - System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-08-02 10:42:10,752 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 10:42:13,176 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 10:42:13,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,182 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,183 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,184 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:13,187 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 10:42:14,091 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 10:42:15,166 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 10:42:15,168 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 10:42:15,170 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 10:42:15,221 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 10:42:15,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 10:42:15,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 10:42:15,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 10:42:16,260 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 117 ms from 169.254.80.80 IP address.
+ERROR 2015-08-02 10:42:16,267 [6    ] .Mvc.Controllers.AbpHandleErrorAttribute - System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+System.DivideByZeroException: 尝试除以零。
+   在 Icode.Blog.Web.Controllers.HomeController.<Index>d__2.MoveNext() 位置 D:\IcodeBlog\Icode.Blog.Web\Controllers\HomeController.cs:行号 24
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-08-02 10:42:57,116 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-02 10:42:58,682 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-02 10:42:58,686 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-02 10:42:58,692 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-02 10:42:59,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-02 10:43:00,621 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-02 10:43:00,623 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-02 10:43:00,624 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-02 10:43:00,861 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-02 10:43:00,866 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-02 10:43:00,867 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-02 10:43:00,867 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-02 10:43:04,760 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 3167 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:04,784 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 3351 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:06,509 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 20 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:06,528 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 17 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:09,873 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 210 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:09,878 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 221 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:10,589 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 1 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:10,591 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:23,058 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 12 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:23,059 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 13 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:23,063 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:43:23,064 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:32,424 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 8 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:32,426 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 11 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:33,032 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:33,033 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:40,720 [17   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 44 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:40,723 [17   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 48 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:40,732 [17   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:40,733 [17   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:43,714 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 16 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:43,716 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 18 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:43,719 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:43,721 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:53,074 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 14 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:53,075 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 16 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:53,079 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:53,080 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:59,061 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 43 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:59,064 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 48 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:59,070 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:44:59,071 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:45:03,504 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 11 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:45:03,506 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 12 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:45:03,510 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:45:03,512 [10   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:46:56,247 [25   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 11 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:46:56,248 [25   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 14 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:46:56,257 [25   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:46:56,258 [25   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:05,819 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 34 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:05,820 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 38 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:05,830 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:05,834 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:24,298 [31   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 31 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:24,300 [31   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 35 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:24,309 [31   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:24,312 [31   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:26,482 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 12 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:26,484 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 15 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:27,151 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:27,153 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:41,402 [34   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 45 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:41,404 [34   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 49 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:41,409 [34   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:41,411 [34   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:43,731 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 15 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:43,732 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 18 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:43,738 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:43,739 [32   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:51,341 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 12 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:51,343 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 14 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:51,346 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:47:51,349 [22   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:30,330 [26   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.PostList is executed by user 1 in 24 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:30,331 [26   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.HomeController.Index is executed by user 1 in 27 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:30,339 [26   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:30,342 [26   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:41,455 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 21 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:41,458 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 24 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:41,465 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:41,467 [27   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:44,797 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostByIdOrEntryName is executed by user 1 in 15 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:44,799 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Controllers.PostController.Articles is executed by user 1 in 17 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:44,802 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetTopTen is executed by user 1 in 0 ms from 169.254.80.80 IP address.
+INFO  2015-08-02 10:49:44,804 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 169.254.80.80 IP address.

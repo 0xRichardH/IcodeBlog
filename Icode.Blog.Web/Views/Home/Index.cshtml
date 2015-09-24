@@ -1,0 +1,58 @@
+﻿@using Icode.Blog.Categories
+@{
+    ViewBag.Title = "ILife，ICode！！爱生活，爱编程！！";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<!-- 博客内容 -->
+@foreach (var item in ViewBag.Posts)
+{
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a class="panel-title" href="@Url.Action("articles", "post", new { id = PageCommonHelper.RenderPostUrl(item.EntryName, item.Id.ToString()) })">
+            @item.Title
+            </a>
+            <a class="pull-right label label-default" href="@Url.Action("articles", "post", new { id = PageCommonHelper.RenderPostUrl(item.EntryName, item.Id.ToString()) })#disqus_thread">0 Comment</a>
+            <a class="pull-right label label-default" href="@Url.Action("articles", "post", new { id = PageCommonHelper.RenderPostUrl(item.EntryName, item.Id.ToString()) })" style="margin: 0 4px;">@PageCommonHelper.FormateDateTime(item.CreationTime)</a>
+        </div>
+        <div class="panel-body">
+            @item.Except
+            <a class="btn btn-xs btn-info" href="@Url.Action("articles", "post", new { id = PageCommonHelper.RenderPostUrl(item.EntryName, item.Id.ToString()) })">阅读全文</a>
+        </div>
+        <div class="panel-footer">
+            标签：
+            @{
+                var categoies = item.Categories;
+                foreach (var category in categoies)
+                {
+                    if (category.Taxonomy == TaxonomyEnum.PostTag)
+                    {
+                        <a href="#" title="查看全部关于 @category.CategoryName 的文章"><span class="badge">@category.CategoryName</span></a>
+                    }
+                }
+            }
+
+        </div>
+    </div>
+                }
+
+
+<!-- 页面分页 -->
+<div class="container">
+    @Html.Pager((int)ViewBag.PageIndex, (int)ViewBag.PageSize, (int)ViewBag.TotalPage, Url.Action("index", "home", new { id = "{0}" }))
+</div>
+
+@section script{
+    @* 评论 显示评论个数 *@
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'haoxilu123';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+}

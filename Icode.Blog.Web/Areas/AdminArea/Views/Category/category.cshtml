@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = string.Format("文章{0}", ViewBag.TypeTitle);
+    Layout = "~/Areas/AdminArea/Views/Shared/_LayoutPage.cshtml";
+}
+@section breadcrumb{
+    <li><i class="fa fa-laptop"></i>&nbsp;<a href="@Request.RawUrl">分类管理</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+    <li class="hidden"><a href="#">文章分类</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+    <li class="active">文章分类</li>
+}
+<div class="col-lg-12" ng-controller="CategoryListController">
+    <div class="portlet box">
+        <div class="portlet-header">
+            <div class="caption">@string.Format("文章{0}", ViewBag.TypeTitle) </div>
+            <div class="actions">
+                <a class="btn btn-info btn-xs" ng-click="create('@ViewBag.CreateUrl')" href="#">
+                    <i class="fa fa-plus"></i>
+                    @string.Format("新增{0}", ViewBag.TypeTitle)
+                </a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div class="row mbm">
+                <div class="col-lg-12">
+                    <div class="table-responsive">
+                        <table id="table_id" class="table table-hover table-striped table-bordered table-advanced tablesorter display">
+                            <thead>
+                                <tr>
+                                    @*<th style="width: 3%; padding: 10px; background: #efefef">
+                                            <input type="checkbox" class="checkall" />
+                                        </th>*@
+                                    <th width="12%">@string.Format("{0}名称", ViewBag.TypeTitle)</th>
+                                    <th width="12%">@string.Format("父{0}",ViewBag.TypeTitle)</th>
+                                    <th width="10%">文章数</th>
+                                    <th width="36%">详细说明</th>
+                                    <th width="27%">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in items">
+                                    @*<td>
+                                            <input type="checkbox" name="{{item.id}}" data-id="{{item.id}}" />
+                                        </td>*@
+                                    <td>{{item.categoryName}}</td>
+                                    <td>{{item.parentCategoryName}}</td>
+                                    <td>{{item.count}}</td>
+                                    <td>{{item.description}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-xs" ng-click="edit(item.id,'@ViewBag.EditUrl')">
+                                            <i class="fa fa-edit"></i>&nbsp; 编辑
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-xs" ng-click="remove(item.id)">
+                                            <i class="glyphicon glyphicon-trash"></i>&nbsp; 删除
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    @* 页码 *@
+                    <div class="text-center">
+                        <ul class="pagination mtm mbm">
+                            <li>
+                                <a href="#" ng-click="prevPager()" ng-show="prevShow">Previous</a>
+                            </li>
+                            <li ng-repeat="page in pageItems" ng-class="{active:page.isActive}">
+                                <a href="#" ng-click="pagerClick(page.index)">{{page.index}}</a>
+                            </li>
+                            <li>
+                                <a href="#" ng-click="nextPager()" ng-show="nextShow">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section script{
+    <script src="~/Areas/AdminArea/Content/js/page/BlogListCommon.js"></script>
+    <script src="~/Areas/AdminArea/Content/js/page/@ViewBag.Js"></script>
+}

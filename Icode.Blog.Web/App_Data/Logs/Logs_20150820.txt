@@ -1,0 +1,30 @@
+DEBUG 2015-08-20 18:59:58,428 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-20 18:59:59,813 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-08-20 18:59:59,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,820 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogApplicationModule, Icode.Blog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogCoreModule, Icode.Blog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogDataModule, Icode.Blog.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.Web.BlogWebModule, Icode.Blog.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,821 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Icode.Blog.BlogWebApiModule, Icode.Blog.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-20 18:59:59,824 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-08-20 19:00:00,552 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-08-20 19:00:01,441 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.UserInfos.IUserInfoService' with service name 'blog/userInfo'.
+DEBUG 2015-08-20 19:00:01,442 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Posts.IPostService' with service name 'blog/post'.
+DEBUG 2015-08-20 19:00:01,443 [1    ] Default                                  - Dynamic web api controller is created for type 'Icode.Blog.Categories.ICategoryService' with service name 'blog/category'.
+DEBUG 2015-08-20 19:00:01,852 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-08-20 19:00:01,857 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-20 19:00:01,888 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Blog
+DEBUG 2015-08-20 19:00:01,889 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-20 19:00:27,049 [6    ] .AdminArea.Controllers.AccountController - 用户ip：::1,邮箱：mail@haoxilu.net 尝试获取验证码
+INFO  2015-08-20 19:00:27,191 [9    ] .AdminArea.Controllers.AccountController - 用户ip：::1,邮箱：mail@haoxilu.net,验证码：223345,状态:发送成功
+INFO  2015-08-20 19:01:13,193 [18   ] .AdminArea.Controllers.AccountController - 用户ip：::1,邮箱：mail@haoxilu.net,DNS：::1,验证码：223345，登陆后台成功!
+INFO  2015-08-20 19:01:13,265 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Web.Areas.AdminArea.Controllers.PostsController.Create is executed by user 1 in 13 ms from 192.168.65.1 IP address.
+INFO  2015-08-20 19:01:17,401 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllCategory is executed by user 1 in 0 ms from 192.168.65.1 IP address.
+INFO  2015-08-20 19:01:17,511 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetPostState is executed by user 1 in 4 ms from 192.168.65.1 IP address.
+INFO  2015-08-20 19:01:17,529 [16   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Posts.PostService.GetCommonSettingState is executed by user 1 in 2 ms from 192.168.65.1 IP address.
+INFO  2015-08-20 19:01:17,553 [9    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: Icode.Blog.Categories.CategoryService.GetAllTag is executed by user 1 in 7 ms from 192.168.65.1 IP address.

@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Areas/AdminArea/Content/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Areas/AdminArea/Content/css/Account/login.min.css" rel="stylesheet" />
+    <link href="~/Abp/Framework/styles/abp.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div id="LoginArea" class="row">
+            <div class="col-lg-12">
+                <div class="well bs-component">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <legend>Login</legend>
+                            <input type="hidden" id="returnUrl" value="@ViewBag.ReturnUrl" />
+                            <input type="hidden" id="sessionId" value="@ViewBag.SessionId" />
+                            <input type="hidden" id="host" value="@ViewBag.Host" />
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <input type="text" class="form-control floating-label" id="EmailAddressInput" placeholder="Email address" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <input type="text" class="form-control " id="ValidateInput" placeholder="Validate code">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="RememberMeInput">
+                                            <span class="ripple"></span>
+                                            <span class="check"></span> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <button class="btn btn-default" id="SendButton">获取验证码</button>
+                                    <button id="LoginButton" class="btn btn-primary"><i class="fa fa-sign-out"></i> 登陆</button>
+                                    <span id="errorSpan" style="color:red;font-weight:bold;"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Areas/AdminArea/Content/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Areas/AdminArea/Content/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Abp/Framework/scripts/abp.js"></script>
+    <script src="~/Abp/Framework/scripts/libs/abp.jquery.js"></script>
+    <script src="~/Areas/AdminArea/Content/js/Account/login.js"></script>
+</body>
+</html>
